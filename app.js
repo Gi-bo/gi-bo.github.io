@@ -111,9 +111,9 @@ addNewClass: function(event){
 let ground1=
 [
     'x112o112o1xx',
-    '12o3221o311x',
+    '12o3221o321x',
     'o423o1112o21',
-    'o4o2221x112o',
+    'o4o2221x113o',
     '2o211o11112o',
     '222x1111o111',
     '2o421xx111xx',
