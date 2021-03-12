@@ -1,4 +1,122 @@
-body {
-    width: 50%;
-    background-color: blueviolet;
+#container{
+    background-color: #2f3848;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+#content{
+    background-color: #2f3848;
+    display: flex;
+    flex-flow: wrap column;
+}
+h1{
+    background-color: #f05768;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    border-bottom: 2px solid white;
+    border-radius: 0.3em;
+}
+header, .presentation{
+    margin-right: 2em;
+    margin-left: 2em;
+    position: relative;
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.gauche a{
+    color: yellowgreen;
+    font-weight: bold;
+    padding-right: 1.5em;
+}
+
+.droite img{
+    height: 1.5em;
+    
+
+}
+.presentation h2{
+    color: #00ccff;
+}
+.presentation p{
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+
+}
+.presentation p a{
+    color: yellowgreen;
+    text-decoration: underline;
+}
+.photo_de_la_semaine{
+    margin-bottom: 1em;
+}
+.photo_de_la_semaine img{
+    width:100%;
+}
+figure{
+    position: relative;
+}
+figure figcaption{
+    top: 0em;
+    left: 0em;
+    background-color: #f05768;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.1em 1em;
+    position: absolute;
+    top: 0em;
+    left: 0em;
+}
+.partie2{
+    display: flex;
+    flex-flow: nowrap row;
+    margin-bottom: 3em;
+}
+.photorama{
+    display: flex;
+    flex-flow: wrap row;
+    width: 70%;
+
+}
+.photorama img{
+    width: 25%;
+    padding-right: 0.2em;
+    padding-bottom: 0.2em;
+}
+.photorama img:hover{
+    transform: scale(2);
+    transition-duration:  0.2s;
+}
+.contact{
+    display: flex;
+    width: 25%;
+    flex-flow: wrap column;
+    background-color: #004488;
+    padding: 1em;
+    margin-right: 2em;
+    height: min-content;
+}
+.contact h3{
+    color: #00ccff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.contact p{
+    color: yellowgreen;
+}
+.contact a{
+    text-decoration: underline;
+    color: yellowgreen;
+}
+footer{
+    text-align: center;
+    color: #00ccff;
+    font-size: 0.8em;
 }
