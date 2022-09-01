@@ -1,122 +1,177 @@
-#container{
-    background-color: #2f3848;
-    width: 80%;
-    margin-right: auto;
-    margin-left: auto;
+body, html {
+    font: 800 "Lato", sans-serif;
+    color: #777;
+    height: 100%;
+    scroll-behavior: smooth;
+}
 
-}
-#content{
-    background-color: #2f3848;
-    display: flex;
-    flex-flow: wrap column;
-}
-h1{
-    background-color: #f05768;
-    color: white;
+h1, h2{
     text-align: center;
-    font-style: italic;
-    border-bottom: 2px solid white;
-    border-radius: 0.3em;
-}
-header, .presentation{
-    margin-right: 2em;
-    margin-left: 2em;
-    position: relative;
-}
-header nav{
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.gauche a{
-    color: yellowgreen;
-    font-weight: bold;
-    padding-right: 1.5em;
-}
-
-.droite img{
-    height: 1.5em;
-    
-
-}
-.presentation h2{
-    color: #00ccff;
-}
-.presentation p{
-    color: white;
-    font-weight: bold;
-    font-size: 0.8em;
-
-}
-.presentation p a{
-    color: yellowgreen;
-    text-decoration: underline;
-}
-.photo_de_la_semaine{
-    margin-bottom: 1em;
-}
-.photo_de_la_semaine img{
-    width:100%;
-}
-figure{
-    position: relative;
-}
-figure figcaption{
-    top: 0em;
-    left: 0em;
-    background-color: #f05768;
-    color: white;
-    font-weight: bold;
+    letter-spacing: 5px;
     text-transform: uppercase;
-    padding: 0.1em 1em;
+    font: "Lato", sans-serif;
+    color: #111;
+}
+
+.bgimg-1{
+    background-image: url("https://picsum.photos/2000/2000?random=1");
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("https://picsum.photos/1000/1000?random=2");
+    min-height: 100vh;
+}
+
+.bgimg-3 {
+    background-image: url("https://picsum.photos/1000/1000?random=3");
+    min-height: 100vh;
+}
+
+.bgimg-4 {
+    background-image: url("https://picsum.photos/1000/1000?random=4");
+    min-height: 100vh;
+}
+
+.bgimg-5 {
+    background-image: url("https://picsum.photos/1000/1000?random=5");
+    min-height: 100vh;
+}
+
+
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5 {
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main_part {
+    position: relative;
+}
+
+.caption {
     position: absolute;
-    top: 0em;
-    left: 0em;
-}
-.partie2{
-    display: flex;
-    flex-flow: nowrap row;
-    margin-bottom: 3em;
-}
-.photorama{
-    display: flex;
-    flex-flow: wrap row;
-    width: 70%;
-
-}
-.photorama img{
-    width: 25%;
-    padding-right: 0.2em;
-    padding-bottom: 0.2em;
-}
-.photorama img:hover{
-    transform: scale(2);
-    transition-duration:  0.2s;
-}
-.contact{
-    display: flex;
-    width: 25%;
-    flex-flow: wrap column;
-    background-color: #004488;
-    padding: 1em;
-    margin-right: 2em;
-    height: min-content;
-}
-.contact h3{
-    color: #00ccff;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-.contact p{
-    color: yellowgreen;
-}
-.contact a{
-    text-decoration: underline;
-    color: yellowgreen;
-}
-footer{
+    left: 0;
+    top: 50%;
+    width: 100%;
     text-align: center;
-    color: #00ccff;
-    font-size: 0.8em;
+    color: #000;
 }
+
+.caption {
+    text-align: center;
+    color: #000;
+}
+
+.caption span.titre {
+    display: block;
+    overflow-wrap: break-word;
+    background-color: rgb(0,0,0,0.7);
+    color: #fff;
+    padding: 1em;
+    margin: auto;
+    font-size: 2em;
+    letter-spacing: 10px;
+    width: 80%;
+}
+
+.experience{
+    color:#ddd;
+    text-align:center;
+    padding:2em 4em;
+    text-align: justify;
+}
+
+a{
+    color:#ddd;
+    text-decoration: none;
+}
+
+a.inner-link {
+    text-align: end;
+}
+
+.experience a {
+    display: block;
+}
+
+.color0 {
+    background-color:white;
+    color: #777
+}
+
+.color1 {
+    background-color:#282E34;
+    color: white;
+}
+
+.color2 {
+    background-color:#494e53;
+}
+
+.color3 {
+    background-color: #777;
+}
+
+
+
+.header {
+    background-color: rgb(0,0,0,0.7) !important;
+    padding: 2em 4em;
+    width: 100%;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-link {
+    color: #fff !important;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    background-color: rgb(0,0,0,0.7);
+    color: #fff;
+    padding: 2em 4em;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+.footer i {
+    font-style: italic;
+}
+
+
+@media screen and (max-width: 500px) {
+    .caption span.titre {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .nav-link {
+        font-size: 0.8em;
+    }
+
+    .footer div {
+        width: 100%;
+    }
+    
+  }
+
+  
